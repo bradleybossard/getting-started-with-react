@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id="app"></div>   
+
+  <script src="https://fb.me/react-0.12.2.min.js"></script>
+  <script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
+
+  <script type="text/jsx">
+  /** @jsx React.DOM */
+  
+  var MessageBox = React.createClass({
+    render: function() {
+      return <h1>Hello, World</h1>;
+    }
+  });
+
+  React.renderComponent(
+    <MessageBox />,
+    document.getElementById('app'),
+    function() {}
+  )
+
+  </script>
+
+</body>
+</html>
